@@ -1,12 +1,9 @@
 
 
-
-
-void quitButSetup () {
   //rect(QBX, QBY, QBW, QBH);
-} 
 
-void quitButDraw () {
+
+void quitButDraw () { //hoverover
   if(mouseX>=QBX && mouseX<=QBX+QBW && mouseY>=QBY && mouseY<=QBY+QBH) {
     noStroke();
     QBColor = red;
