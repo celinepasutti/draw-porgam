@@ -49,8 +49,8 @@ void coButDraw () {
       fill(Lpurple);
       rect(LpurpleX, LpurpleY, colorW, colorH);
       
-      fill(Dpurple);
-      rect(DpurpleX, DpurpleY, colorW, colorH);
+      fill(white);
+      rect(whiteX, whiteY, colorW, colorH);
       
       fill(pink);
       rect(pinkX, pinkY, colorW, colorH);
@@ -91,7 +91,7 @@ void cbMP () {
   LblueMP();
   DblueMP();
   LpurpleMP();
-  DpurpleMP();
+  whiteMP();
   pinkMP();
   greyMP();
   blackMP();
@@ -148,9 +148,9 @@ void LpurpleMP () {
      drawColor = Lpurple;
 }
 
-void DpurpleMP () {
-  if (colorButtonON == true && mouseX>DpurpleX && mouseX<DpurpleX+colorW && mouseY>DpurpleY && mouseY<DpurpleY+colorH)
-     drawColor = Dpurple;
+void whiteMP () {
+  if (colorButtonON == true && mouseX>whiteX && mouseX<whiteX+colorW && mouseY>whiteY && mouseY<whiteY+colorH)
+     drawColor = white;
 }
 
 void pinkMP () {

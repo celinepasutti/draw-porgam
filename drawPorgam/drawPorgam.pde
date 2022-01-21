@@ -8,10 +8,13 @@ void setup () {
   textSetup();
   noStroke();
 
+
  
   
   //drawing surface
+  fill(BGcolor);
   rect(dsx, dsy, dsw, dsh);
+  fill(white);
   
   //menuBase
   rect(mx, my, mw, mh);
@@ -23,16 +26,26 @@ void setup () {
 
 
   
-  
+  stroke(reset);
 }
 
 
 void draw () {
+
   //==16unctions===
   quitButDraw();
   stButDraw();
   coButDraw();
   tbButDraw();
+  backButDraw();
+  noStroke();
+  
+  fill(red);
+  rect (sbx, displayHeight*25/32, mbw, displayHeight*3/16); //jukebox proto
+  
+  //fill(gray);
+  //rect(mw+sideMenuW, displayHeight*0, displayWidth*2.1/64, displayHeight*1); 
+  //fill(white);
   
   
   
@@ -47,7 +60,7 @@ void draw () {
   } 
   */
   
-  
+
 }
 
 void mousePressed () {
@@ -55,6 +68,7 @@ void mousePressed () {
   sbMP();
   tbMP();
   cbMP();
+  bbMP();
   
  
   

@@ -9,6 +9,7 @@ float reset;
 float drawStroke;
 
 //===drawingSurface===
+color BGcolor = white;
 Boolean draw = false;
 float dsx, dsy, dsw, dsh;
 
@@ -95,9 +96,9 @@ Boolean colorButtonRESET = false;
                     
                     float LpurpleX, LpurpleY;
                     
-                    float DpurpleX, DpurpleY;
-                    
                     float pinkX, pinkY;
+                    
+                    float whiteX, whiteY;
                     
                     float greyX, greyY;
                     
@@ -116,6 +117,24 @@ float tbmx, tbmy;
 Boolean toolButtonON = false;
 
 Boolean toolButtonRESET = false;
+
+//background
+
+String backtxt = "Random";
+
+color bbcolor;
+
+float bbx, bby;
+
+String bbtxt = "Background";
+
+float bbmx, bbmy;
+
+Boolean backButtonON = false;
+
+Boolean backButtonRESET = false;
+
+float redYB, orangeYB, yellowYB, LgreenYB, DgreenYB, LblueYB, DblueYB, LpurpleYB, pinkYB, whiteYB, greyYB, blackYB, randomYB; 
 
 //=====quitButton=====
 color QBColor;
@@ -191,12 +210,12 @@ void population () {
              
              redY = orangeY = yellowY = LgreenY = eraserY = cbmy;
              DgreenY = DblueY = LblueY = LpurpleY = cbmy + cbmy*1/3;
-             DpurpleY = pinkY = greyY = blackY = cbmy + cbmy*2/3;
+             pinkY = whiteY = greyY = blackY = cbmy + cbmy*2/3;
              
-             redX = LpurpleX = DpurpleX = cbmx;
+             redX = LpurpleX = pinkX = cbmx;
 
              
-             orangeX = LblueX = pinkX = cbmx + sideMenuW*1/5;
+             orangeX = LblueX = whiteX = cbmx + sideMenuW*1/5;
 
              
              yellowX = DblueX = greyX = cbmx + sideMenuW*2/5;
@@ -240,10 +259,26 @@ void population () {
                    extriY1 = exlineY + 20;
                    extriY2 = exlineY - 20;
                    extriY3 = exlineY + 20;
-
-             
-             
+                   
+                   
              dd = displayWidth*1/40;
+             
+             
+             
+//background
+
+
+bbx = tbx;
+bby = displayHeight*13/32;
+
+bbmx = mw;
+bbmy = displayHeight*3/8;
+
+redYB = orangeYB = yellowYB = LgreenYB = randomYB = bbmy;
+DgreenYB = DblueYB = LblueYB = LpurpleYB = bbmy + colorH;
+pinkYB = whiteYB = greyYB = blackYB =  bbmy + colorH + colorH;
+
+
   
   //=======quitButton=====
   
@@ -251,4 +286,6 @@ void population () {
   QBY = displayHeight*0;
   QBW = displayWidth*1.1/20;
   QBH = displayHeight*1/20;
+  
+
 }
