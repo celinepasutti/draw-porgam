@@ -115,105 +115,106 @@ randomBackMP();
 }
 
 void redBackMP () {
-  if (colorButtonON == true && mouseX>redX && mouseX<redX+colorW && mouseY>redYB && mouseY<redYB+colorH)
+  if (backButtonON == true && mouseX>redX && mouseX<redX+colorW && mouseY>redYB && mouseY<redYB+colorH) {
      BGcolor = red;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void orangeBackMP () {
-  if (colorButtonON == true && mouseX>orangeX && mouseX<orangeX+colorW && mouseY>orangeYB && mouseY<orangeYB+colorH)
+  if (backButtonON == true && mouseX>orangeX && mouseX<orangeX+colorW && mouseY>orangeYB && mouseY<orangeYB+colorH) {
      BGcolor = orange;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void yellowBackMP () {
-  if (colorButtonON == true && mouseX>yellowX && mouseX<yellowX+colorW && mouseY>yellowYB && mouseY<yellowYB+colorH)
+  if (backButtonON == true && mouseX>yellowX && mouseX<yellowX+colorW && mouseY>yellowYB && mouseY<yellowYB+colorH) {
      BGcolor = yellow;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void LgreenBackMP () {
-  if (colorButtonON == true && mouseX>LgreenX && mouseX<LgreenX+colorW && mouseY>LgreenYB && mouseY<LgreenYB+colorH)
+  if (backButtonON == true && mouseX>LgreenX && mouseX<LgreenX+colorW && mouseY>LgreenYB && mouseY<LgreenYB+colorH) {
      BGcolor = Lgreen;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void DgreenBackMP () {
-  if (colorButtonON == true && mouseX>DgreenX && mouseX<DgreenX+colorW && mouseY>DgreenYB && mouseY<DgreenYB+colorH)
+  if (backButtonON == true && mouseX>DgreenX && mouseX<DgreenX+colorW && mouseY>DgreenYB && mouseY<DgreenYB+colorH) {
      BGcolor = Dgreen;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void DblueBackMP () {
-  if (colorButtonON == true && mouseX>DblueX && mouseX<DblueX+colorW && mouseY>DblueYB && mouseY<DblueYB+colorH)
+  if (backButtonON == true && mouseX>DblueX && mouseX<DblueX+colorW && mouseY>DblueYB && mouseY<DblueYB+colorH) {
      BGcolor = Dblue;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void LblueBackMP () {
-  if (colorButtonON == true && mouseX>LblueX && mouseX<LblueX+colorW && mouseY>LblueYB && mouseY<LblueYB+colorH)
+  if (backButtonON == true && mouseX>LblueX && mouseX<LblueX+colorW && mouseY>LblueYB && mouseY<LblueYB+colorH) {
      BGcolor = blue;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
      fill(white);
+  }
 }
 
 void LpurpleBackMP () {
-  if (colorButtonON == true && mouseX>LpurpleX && mouseX<LpurpleX+colorW && mouseY>LpurpleYB && mouseY<LpurpleYB+colorH)
+  if (backButtonON == true && mouseX>LpurpleX && mouseX<LpurpleX+colorW && mouseY>LpurpleYB && mouseY<LpurpleYB+colorH) {
      BGcolor = Lpurple;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void whiteBackMP () {
-  if (colorButtonON == true && mouseX>whiteX && mouseX<whiteX+colorW && mouseY>whiteYB && mouseY<whiteYB+colorH)
+  if (backButtonON == true && mouseX>whiteX && mouseX<whiteX+colorW && mouseY>whiteYB && mouseY<whiteYB+colorH) {
      BGcolor = white;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void pinkBackMP () {
-  if (colorButtonON == true && mouseX>pinkX && mouseX<pinkX+colorW && mouseY>pinkYB && mouseY<pinkYB+colorH)
+  if (backButtonON == true && mouseX>pinkX && mouseX<pinkX+colorW && mouseY>pinkYB && mouseY<pinkYB+colorH) {
      BGcolor = pink;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void greyBackMP () {
-  if (colorButtonON == true && mouseX>greyX && mouseX<greyX+colorW && mouseY>greyYB && mouseY<greyYB+colorH)
+  if (backButtonON == true && mouseX>greyX && mouseX<greyX+colorW && mouseY>greyYB && mouseY<greyYB+colorH) {
      BGcolor = grey;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void blackBackMP () {
-  if (colorButtonON == true && mouseX>blackX && mouseX<blackX+colorW && mouseY>blackYB && mouseY<blackYB+colorH)
+  if (backButtonON == true && mouseX>blackX && mouseX<blackX+colorW && mouseY>blackYB && mouseY<blackYB+colorH) {
      BGcolor = black;
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }
 
 void randomBackMP () {
-  if (colorButtonON == true && mouseX>eraserX && mouseX<eraserX+eraserW && mouseY>randomYB && mouseY<randomYB+eraserH)
+  if (backButtonON == true && mouseX>eraserX && mouseX<eraserX+eraserW && mouseY>randomYB && mouseY<randomYB+eraserH) {
      BGcolor = color(random(255), random(255), random(255));
      fill(BGcolor);
      rect(dsx, dsy, dsw, dsh);
-
+  }
 }

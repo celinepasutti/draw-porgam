@@ -1,3 +1,21 @@
+//templates
+
+color tpColor;
+
+PImage flower, mandela, dragon;
+
+float exY, exMandelaX, exFlowerX, exDragonX;
+
+float exW, exH;
+
+float tpbx, tpby, tpmx, tpmy;
+
+Boolean templButtonON = false;
+
+Boolean templButtonRESET = false;
+
+String tptxt = "Templates";
+
 //===colors===
 color red=#DB4B4B, white=#FFFFFF, black=#000000, blue=#7CCBF5, orange=#FF742E, gray=#CBCBCB, yellow=#FFDD2E, Lgreen=#42C90E, Dgreen=#11901F, Dblue=#0B7089, Lpurple=#A630E3,
 Dpurple=#771EA7, pink=#FC3671, grey=#868686, Lgrey=#E8E8E8;
@@ -9,7 +27,7 @@ float reset;
 float drawStroke;
 
 //===drawingSurface===
-color BGcolor = white;
+color BGcolor;
 Boolean draw = false;
 float dsx, dsy, dsw, dsh;
 
@@ -136,6 +154,7 @@ Boolean backButtonRESET = false;
 
 float redYB, orangeYB, yellowYB, LgreenYB, DgreenYB, LblueYB, DblueYB, LpurpleYB, pinkYB, whiteYB, greyYB, blackYB, randomYB; 
 
+
 //=====quitButton=====
 color QBColor;
 
@@ -148,8 +167,36 @@ String quitB = "X";
 PFont font;
 
 
+//JUKEBOX
+float jbx, jby, jbh, jbw, jbmx, jbmy, jbmw, jbmh;
+
+float pauseplayX, pauseplayY, pauseplayD;
+
+float nextX, nextY, prevX, prevY, skipW, skipH, loopX, loopY, powerX, powerY;
+
+color jbColor;
+
+Boolean jukeButtonON = false;
+
+Boolean jukeButtonRESET = false;
+
+String jbtxt = "Jukebox";
+
+PImage pause, play, next, previous, loop, power;
+
+Boolean pauseON = false;
+
+Boolean playON = false;
+
+String looptxt = "Select the number of times you want this song to loop on your keyboard. (0-9)";
+
+float loopCount;
 
 void population () {
+ 
+
+  
+  
   //===strokes===
   reset = 1;
   
@@ -278,6 +325,74 @@ redYB = orangeYB = yellowYB = LgreenYB = randomYB = bbmy;
 DgreenYB = DblueYB = LblueYB = LpurpleYB = bbmy + colorH;
 pinkYB = whiteYB = greyYB = blackYB =  bbmy + colorH + colorH;
 
+  
+  //templateButton
+  
+  
+  tpColor = gray;
+  
+  tpbx = tbx;
+  tpby = displayHeight*17/32;
+  
+  tpmx = mw;
+  tpmy = displayHeight*1/2;
+  
+
+  //templates 
+  mandela = loadImage("media/mandela.png");
+  flower = loadImage("media/flowers.png");
+  dragon = loadImage("media/dragon.png");
+  
+  exW = strSelW;
+  exH = strSelH;
+  
+  exY = tpmy;
+  exMandelaX = tpmx;
+  exFlowerX = tpmx + exW;
+  exDragonX = tpmx + exW + exW;
+  
+  //jukeboxButton
+  
+  
+  jbx = sbx;
+  jby = displayHeight*21/32;
+  
+  jbw = mbw;
+  jbh =  displayHeight*5/16;
+  
+  jbmx = mw;
+  jbmy = displayHeight*5/8;
+  jbmw = sideMenuW;
+  jbmh = sideMenuH*3;
+  
+  play = loadImage("media/play.png");
+  pause = loadImage("media/pause.png");
+  
+  next = loadImage("media/fastForward.png");
+  previous = loadImage("media/fastBack.png");
+  
+  loop = loadImage("media/loo.png");
+  power = loadImage("media/power.png");
+  
+  pauseplayX = jbmx + jbmx*6.6/8;
+  pauseplayY = jbmy + jbmy*1/4;
+  pauseplayD = displayHeight*1/16;
+  
+  nextX = pauseplayX + jbmx*1.2/3;
+  nextY = pauseplayY;
+  
+  prevX = pauseplayX - jbmx*1/3;
+  prevY = pauseplayY;
+  
+  skipW = displayWidth*1/32;
+  skipH = displayHeight*1/15;
+  
+  loopX = pauseplayX + jbmx*2.3/3;
+  loopY = pauseplayY;
+  
+  powerX = pauseplayX - jbmx*2.2/3;
+  powerY = pauseplayY;
+  
 
   
   //=======quitButton=====

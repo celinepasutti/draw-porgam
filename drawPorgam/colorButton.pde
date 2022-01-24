@@ -170,5 +170,5 @@ void blackMP () {
 
 void eraserMP () {
   if (colorButtonON == true && mouseX>eraserX && mouseX<eraserX+eraserW && mouseY>eraserY && mouseY<eraserY+eraserH)
-     drawColor = white;
+     drawColor = BGcolor;
 }
