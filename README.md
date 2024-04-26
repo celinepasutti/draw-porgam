@@ -1,2 +1,2 @@
-# draw-porgam
-cs10 fina; esxam
+# draw-progam
+music player/drawing program for cs10 final
